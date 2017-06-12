@@ -1,5 +1,15 @@
+var targetNum = 75
+var randomNum = math.floor(math.random() * 100
+var counter = 0
+
 // //computer will pick a random number
-// loop through math.random to find random number
+// use math.random to find random number
+
+function random(){
+	randomNum[math.floor(math.random() * 100)];
+}
+$(document).on("click", random);
+
 
 
 //numbers assigned to crystals
