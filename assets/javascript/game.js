@@ -1,3 +1,9 @@
+(document).ready(function)()
+	
+	$(".btn") .on ("click", function() {
+		alert("Let's Play!");
+})
+
 var targetNum = 75
 var randomNum = math.floor(math.random() * 100
 var counter = 0
@@ -5,9 +11,10 @@ var counter = 0
 // //computer will pick a random number
 // use math.random to find random number
 
-function random(){
-	randomNum[math.floor(math.random() * 100)];
-}
+var random = targetNum[math.floor(math.random() * 100)];
+console.log(randomNum);
+
+//number displays to screen
 $(document).on("click", random);
 
 
@@ -24,6 +31,9 @@ $(document).on("click", random);
 	
 // //if user reaches random numer, alert you win and reset
 
+// $("#clear").on("click", function() {
+//       $("#display").empty();
+//             });
 
 
 // //if user surpasses random number, alert you lose
