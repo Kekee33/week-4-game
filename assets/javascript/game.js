@@ -10,53 +10,53 @@ $(document).ready(function() {
   $("#targetScore").html(targetNum);
   console.log("target score is " + targetNum);
 
-//  var counter = 0;
+ var counter = 0;
 
-// var numberOptions = [5, 10, 20];
-//   var increment = numberOptions[Math.round(Math.random())];
+ var numberOptions = [5, 10, 20];
+  numberOptions[Math.round(Math.random())];
 
 
-//   $(".shells").on("click", function() {
-//      counter += increment;
+   $(".shells").on("click", function() {
+      counter += numberOptions;
 
-//      alert("Current score: " + counter);
+     alert("Current score: " + counter);
 
-//   });
+   });
 // //numbers need to show in score box
  $("#targetScore").text(targetNum); 
 
-// for (var i = 0; i < numberOptions.length; i++) {
-// 	 var shellImage = $("<img>");
-// 	 shellImage.addClass("shell-image");
+for (var i = 0; i < numberOptions.length; i++) {
+	 var shellImage = $("<img>");
+	 shellImage.addClass("shell-image");
 
-// 	shellImage.attr("http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png");
+	shellImage.attr("http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png");
 
-// 	shellImage.attr("data-shellvalue", numberOptions[i]);
+	shellImage.attr("data-shellvalue", numberOptions[i]);
 
-// 	$(".crystals").append(imageCrystal);
+	$(".shells").append(shellImage);
 
-// 	$(".shell-image").on("click", function() {
+	$(".shell-image").on("click", function() {
 
-// var shellValue = ($(this).attr("data-shellvalue"));
-//     shellValue = parseInt(shellValue);		
+var shellValue = ($(this).attr("data-shellvalue"));
+    shellValue = parseInt(shellValue);		
 
-// // //if user reaches random numer, alert you win and reset
-// counter += shellValue;
+// //if user reaches random numer, alert you win and reset
+counter += shellValue;
 
-// if (counter === targetNum) {
-// 	 alert("You win!");
-//     }
+if (counter === targetNum) {
+	 alert("You win!");
+    }
  
-//  	$("#clear").on("click", function() {
-//        $("#display").empty();
-//     });
+ 	$("#clear").on("click", function() {
+       $("#display").empty();
+    });
 
-// if (counter >= targetNum) {
+if (counter >= targetNum) {
 
-//       //Alert with a loss.
-//       alert("You lose!!");
-//     }
-// });
+      //Alert with a loss.
+      alert("You lose!!");
+    }
+})};
 
 
 
