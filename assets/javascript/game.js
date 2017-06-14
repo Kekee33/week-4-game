@@ -2,12 +2,18 @@ $(document).ready(function() {
 });
 	
 	
-	//$(".btn") .on ("click", function() {
-		//alert("Let's Play!");
-//})
-  targetNum = Math.floor(Math.random()* 100);
+
+ 		alert("Let's Play!");
+
+
+  var targetNum = Math.floor(Math.random()* 100);
   targetNum[Math.floor(Math.random() * 100)];
-  $("#targetScore").html(targetNum);
+  
+function targetNum(){
+
+	$("#targetScore").append("targetNum");
+}
+  
   console.log("target score is " + targetNum);
 
  var counter = 0;
@@ -16,47 +22,47 @@ $(document).ready(function() {
   numberOptions[Math.round(Math.random())];
 
 
-   $(".shells").on("click", function() {
-      counter += numberOptions;
-
-     alert("Current score: " + counter);
+   $(".shells-image").on("click", function() {
+      //counter += numberOptions;
+      alert("You clicked a shell!")
+    // alert("Current score: " + counter);
 
    });
 // //numbers need to show in score box
- $("#targetScore").text(targetNum); 
+//  $("#targetScore").text(targetNum); 
 
-for (var i = 0; i < numberOptions.length; i++) {
-	 var shellImage = $("<img>");
-	 shellImage.addClass("shell-image");
+// for (var i = 0; i < numberOptions.length; i++) {
+// 	 var shellImage = $("<img>");
+// 	 shellImage.addClass("shell-image");
 
-	shellImage.attr("http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png");
+// 	shellImage.attr("http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png");
 
-	shellImage.attr("data-shellvalue", numberOptions[i]);
+// 	shellImage.attr("data-shellvalue", numberOptions[i]);
 
-	$(".shells").append(shellImage);
+// 	$(".shells").append(shellImage);
 
-	$(".shell-image").on("click", function() {
+// 	$(".shell-image").on("click", function() {
 
-var shellValue = ($(this).attr("data-shellvalue"));
-    shellValue = parseInt(shellValue);		
+// var shellValue = ($(this).attr("data-shellvalue"));
+//     shellValue = parseInt(shellValue);		
 
-// //if user reaches random numer, alert you win and reset
-counter += shellValue;
+// // //if user reaches random numer, alert you win and reset
+// counter += shellValue;
 
-if (counter === targetNum) {
-	 alert("You win!");
-    }
+// if (counter === targetNum) {
+// 	 alert("You win!");
+//     }
  
- 	$("#clear").on("click", function() {
-       $("#display").empty();
-    });
+//  	$("#clear").on("click", function() {
+//        $("#display").empty();
+//     });
 
-if (counter >= targetNum) {
+// if (counter >= targetNum) {
 
-      //Alert with a loss.
-      alert("You lose!!");
-    }
-})};
+//       //Alert with a loss.
+//       alert("You lose!!");
+//     }
+// })};
 
 
 
