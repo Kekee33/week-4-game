@@ -1,35 +1,31 @@
-$(document).ready(function() {
+function getRandomNum(){
+	var targetNum= Math.floor(Math.random()* 120);
+	return targetNum;
+} 
+
+$(document).ready(function(targetNum) {
+
+	alert("Let's Play!");
+	//numbers need to show in score box
+	$("#targetScore").text(getRandomNum());
+	 console.log("target score is " + getRandomNum());
+
 });
 	
-	
-
- 		alert("Let's Play!");
-
-
-  var targetNum = Math.floor(Math.random()* 100);
-  targetNum[Math.floor(Math.random() * 100)];
-  
-function targetNum(){
-
-	$("#targetScore").append("targetNum");
-}
-  
-  console.log("target score is " + targetNum);
+ 
+ 
 
  var counter = 0;
+ var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+ var randomNumbers = numberOptions[Math.round(Math.random() * numberOptions.length)];
 
- var numberOptions = [5, 10, 20];
-  numberOptions[Math.round(Math.random())];
-
-
-   $(".shells-image").on("click", function() {
-      //counter += numberOptions;
+   $(".shells").on("click", function() {      
       alert("You clicked a shell!")
-    // alert("Current score: " + counter);
+      counter += numberOptions;
+    alert("Current score: " + counter);
 
    });
-// //numbers need to show in score box
-//  $("#targetScore").text(targetNum); 
+
 
 // for (var i = 0; i < numberOptions.length; i++) {
 // 	 var shellImage = $("<img>");
