@@ -2,28 +2,29 @@
 <html>
 
 <head>
-    <title>Crystal Game</title>
+    <title>Shell Game</title>
        
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">     
 </head>
 
-<body>
+<body background="http://images.nationalgeographic.com/wpf/media-content/photos/000/915/custom/91547_990x450-cb1439592748.jpg">
+    
     <div class="jumbotron">
         <h1>Shell Game</h1>
         
     </div>
-    <div class="panel panel-default">
+    <div class="panel panel-primary">
         <div class="panel-heading">
             <h3 class="panel-title">Instructions</h3>
         </div>
         <div class="panel-body">
-            You will be given a random numer at the start of the game. There are four crystals below. By clicking on a crystal below you will add a specific amount of points to your total score. You win the game by matching your score to the random numer. You lose the game if your total score goes over the random number. The value of the crystal is hidden until you click it.
+            You will be given a random numer at the start of the game. There are four shells below. By clicking on a shell below you will add a specific amount of points to your total score. You win the game by matching your score to the random numer. You lose the game if your total score goes over the random number. The value of each shell is hidden until you click it.
         </div>
     </div>
     <div class="row">
         <div class="col-md-3">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Target Score:</h3>
                 </div>
@@ -33,26 +34,28 @@
             </div>
         </div>
         <div class="col-md-3">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Your Score</h3>
+                    <h3 class="panel-title">Your Current Guess</h3>
                 </div>
                 <div class="panel-body">
-                    Panel content
+                  <span id="yourScore"></span>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
-            <div class="panel panel-default">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Crystal Selection</h3>
+                    <h3 class="panel-title">Shell Selection</h3>
                 </div>
-                <div class="panel-body">
+                <div class="panel-primary">
                     <div class="shells">
-                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png">
-                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png">
-                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png">
-                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png">
+                    <center>
+                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png" data-shellValue="">
+                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png" data-shellValue="">
+                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png" data-shellValue="">
+                        <img class="shell-image" src="http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png" data-shellValue="">
+                    </center>
                     </div>    
                 </div>
             </div>

@@ -1,33 +1,52 @@
 function getRandomNum(){
 	var targetNum= Math.floor(Math.random()* 120);
 	return targetNum;
-} 
+}
+
+var targetNum= Math.floor(Math.random()* 120);
 
 $(document).ready(function(targetNum) {
 
-	alert("Let's Play!");
+	//alert("Let's Play!");
 	//numbers need to show in score box
 	$("#targetScore").text(getRandomNum());
 	 console.log("target score is " + getRandomNum());
 
 });
-	
- 
- 
 
  var counter = 0;
- var numberOptions = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
- var randomNumbers = numberOptions[Math.round(Math.random() * numberOptions.length)];
+function addScore() {
+	var increase = counter++;
+	console.log(increase);
+}
 
-   $(".shells").on("click", function() {      
-      alert("You clicked a shell!")
-      counter += numberOptions;
-    alert("Current score: " + counter);
+addScore();
 
-   });
+ function getUserRandom() {
+ 	var maxAndMin = Math.floor(Math.random() * (1, 12));
+ 	return maxAndMin;
+ }
 
+// getUserRandom(1,12);
 
-// for (var i = 0; i < numberOptions.length; i++) {
+  $(".shells").on("click", function() {      
+      $("#yourScore").text(getUserRandom()); 
+    console.log("you guessed " + getUserRandom());
+ }); 
+
+//  function putRandomNumberInShells(){
+//  	$(".shells").push(getUserRandom(1, 12));
+ 	//counter ++
+ 	//console.log(maxAndMin);
+ //}
+ 
+ //counter += getUserRandom;
+   //  console.log(userRandomNumbers);
+   // }
+
+$("#yourScore").text(userRandomNumbers());
+//      alert("Current score: " + counter);
+// // for (var i = 0; i < numberOptions.length; i++) {
 // 	 var shellImage = $("<img>");
 // 	 shellImage.addClass("shell-image");
 
@@ -39,26 +58,26 @@ $(document).ready(function(targetNum) {
 
 // 	$(".shell-image").on("click", function() {
 
-// var shellValue = ($(this).attr("data-shellvalue"));
-//     shellValue = parseInt(shellValue);		
+var shellValue = ($(this).attr("data-shellvalue"));
+    shellValue = parseInt(shellValue);		
 
-// // //if user reaches random numer, alert you win and reset
-// counter += shellValue;
+// //if user reaches random numer, alert you win and reset
+counter += shellValue;
 
-// if (counter === targetNum) {
-// 	 alert("You win!");
-//     }
+if (counter === targetNum) {
+	 alert("You win!");
+    }
  
-//  	$("#clear").on("click", function() {
-//        $("#display").empty();
-//     });
+ 	$("#clear").on("click", function() {
+       $("#display").empty();
+    });
 
-// if (counter >= targetNum) {
+if (counter >= targetNum) {
 
-//       //Alert with a loss.
-//       alert("You lose!!");
-//     }
-// })};
+      //Alert with a loss.
+      alert("You lose!!");
+    }
+;
 
 
 
