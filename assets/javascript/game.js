@@ -14,7 +14,8 @@ $(document).ready(function(targetNum) {
 
 });
 
- var counter = 0;
+var counter = 0;
+
 function addScore() {
 	var increase = counter++;
 	console.log(increase);
