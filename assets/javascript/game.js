@@ -16,8 +16,9 @@ $(document).ready(function(targetNum) {
 
 var counter = 0;
 
+
 function addScore() {
-	var increase = counter++;
+	 increase = counter++;
 	console.log(increase);
 }
 
@@ -45,19 +46,13 @@ addScore();
    //  console.log(userRandomNumbers);
    // }
 
-$("#yourScore").text(userRandomNumbers());
+//$("#yourScore").text(userRandomNumbers());
 //      alert("Current score: " + counter);
 // // for (var i = 0; i < numberOptions.length; i++) {
 // 	 var shellImage = $("<img>");
 // 	 shellImage.addClass("shell-image");
 
-// 	shellImage.attr("http://clipartix.com/wp-content/uploads/2016/06/Transparent-seashell-clipart.png");
 
-// 	shellImage.attr("data-shellvalue", numberOptions[i]);
-
-// 	$(".shells").append(shellImage);
-
-// 	$(".shell-image").on("click", function() {
 
 var shellValue = ($(this).attr("data-shellvalue"));
     shellValue = parseInt(shellValue);		
