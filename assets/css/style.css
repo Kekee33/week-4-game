@@ -1,0 +1,32 @@
+.jumbotron {
+	text-align: center;
+	margin: 20px 50px 20px 50px;
+	opacity: 0.7;
+}
+
+.shell-image {
+	width: 100px;
+	height: 100px;
+}
+
+.panel-body {
+	margin: 10px 50px 10px 50px;
+	
+}
+
+.panel-primary {
+	text-align: center;
+	margin: 20px 0 20px 0;	
+}
+
+
+#targetscore {
+	font-size: 50px;
+}
+
+#yourscore {
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	opacity: 0.5;
+}
